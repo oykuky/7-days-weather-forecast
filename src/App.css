@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+
+.co{
+  height: 700px;
+  width: max-content;
+  background:linear-gradient(rgb(121, 246, 183),rgb(144, 203, 248), #2cc3ed);
+  margin: auto;
+  border-radius: 26px;
+  border: 2px solid rgb(87, 154, 212) ;
+  display: flexbox;
+  
+}
+
+.dropdown{
+  margin-top: 100px;
+  margin-bottom: 25px;
+  color: #625f5f;
+}
+.toggle{
+  width: 460px;
+  height: 70px;
+}
+.dropItem{
+  width: 460px;
+  height: 190px;
+}
+
+.cityBox{
+  font-size: 30px;
+  font-weight: 600;
+  padding:5px 23px 2px 23px ;
+  border:2px solid rgb(95, 169, 166);
+  width:min-content;
+  margin: auto;
+  border-radius: 25px;
+}
+.currentCard{
+  
+}
+.cardBody{
+  background-color: rgba(102, 202, 202, 0.754);
+  border-radius:55px;
+  margin-top: 53px;
+  margin-bottom: 21px;
+}
+
+.card{
+  width: 16rem;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.cardtext{
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.wetCards{
+ margin-top: 135px;
+ display: flex;
+ justify-items: center;
+}
+
+.img{
+  margin: auto;
+  margin-top: 55px;
+  border-radius: 50px;
+  background-color:  #231f1fc0;
+  width: 250px;
+  height: 250px;
+}
+
+.title{
+  font-size: 30px;
+
+}
