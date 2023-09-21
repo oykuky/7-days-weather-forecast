@@ -1,21 +1,59 @@
 .App {
   text-align: center;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 100vh !important;
+  background:linear-gradient(rgb(121, 246, 183), #c7f0f0, #2cc3ed);
 }
 
-
 .co{
-  height: 700px;
+  margin: 0 auto; /* İçeriği yatay olarak ortala */
+  height: max-content;
   width: max-content;
-  background:linear-gradient(rgb(121, 246, 183),rgb(144, 203, 248), #2cc3ed);
-  margin: auto;
-  border-radius: 26px;
-  border: 2px solid rgb(87, 154, 212) ;
-  display: flexbox;
+  background-color: rgba(255, 255, 246, 0.758);
+  border-radius: 55px;
+  display: flex !important;
+  flex-wrap: wrap; /* İçerik sıralı bir şekilde sığsın */
+  justify-content: center !important; /* İçeriği yatay olarak ortala */
+  align-items: flex-start !important;/* İçeriği dikey olarak üstte hizala */
   
+}
+.currentCard{
+  background-color: rgb(255, 255, 246);
+  border-radius: 55px;
+  margin-bottom: 53px;
+}
+.header{
+ position: absolute;
+ margin-top: 12px;
+ margin-left: 32px;
+ font-size: 33px;
+ color: #625f5f;
+ font-weight: 600;
+}
+.temp{
+  font-size: 130px;
+  font-weight: 300;
+  width: 150px;
+  height: 150px;
+  position :absolute;
+  margin-top: 142px;
+  margin-left: 382px;
+  color: #625f5f;
+}
+.currentimg{
+  margin: auto;
+  margin-top: 55px;
+  border-radius: 50% !important;
+  width: 100%; /* Resim genişliğini yüzde olarak ayarla */
+  max-width: 268px; /* Maksimum genişlik belirle */
+  height: auto; /* Yüksekliği otomatik olarak ayarla */
 }
 
 .dropdown{
-  margin-top: 100px;
+  margin-top: 10px;
   margin-bottom: 25px;
   color: #625f5f;
 }
@@ -37,9 +75,7 @@
   margin: auto;
   border-radius: 25px;
 }
-.currentCard{
-  
-}
+
 .cardBody{
   background-color: rgba(102, 202, 202, 0.754);
   border-radius:55px;
@@ -51,9 +87,11 @@
   width: 16rem;
   margin-right: 10px;
   margin-left: 10px;
+  background-color: transparent !important;
+  border: none !important;
 }
 .cardtext{
-  font-size: 25px;
+  font-size: 32px;
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
@@ -62,18 +100,23 @@
  margin-top: 135px;
  display: flex;
  justify-items: center;
+ flex: 1; /* İçerikleri eşit genişlikte yay */
+ text-align: center; /* İçeriği ortala */
 }
 
 .img{
   margin: auto;
   margin-top: 55px;
-  border-radius: 50px;
-  background-color:  #231f1fc0;
-  width: 250px;
-  height: 250px;
+  border-radius: 50% !important;
+  background-color:  #d7d3d3c0;
+  width: 100%; /* Resim genişliğini yüzde olarak ayarla */
+  max-width: 180px; /* Maksimum genişlik belirle */
+  height: auto; /* Yüksekliği otomatik olarak ayarla */
+
 }
 
 .title{
   font-size: 30px;
 
 }
+

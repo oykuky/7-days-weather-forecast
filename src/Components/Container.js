@@ -21,18 +21,27 @@ function Container() {
   console.log(currentData);
   
   return (
-         <div className='co'>
+          <div className='big-co'>
           <div className='currentCard'>
-            <Card className="card">
-                  <Card.Title className='title'>{weatherData.current.date}</Card.Title>
-                  <Card.Img className='img' variant="top" src={currentData.condition.icon}/>
+           <h3 className='header'>Current Weather</h3>
+          <div>
+          <p className=''> 
+           Feels like {currentData.temp_c}°C 
+           </p>
+           <br/>
+           <p>Humidity</p>
+          </div>
+            <Card className='card' >
+                  <Card.Img className='currentimg' variant="top" src={currentData.condition.icon}/>
                   <Card.Body className="cardBody">
                     <Card.Text className='cardtext'>
-                      {currentData.temp_c}°C - {currentData.condition.text}
+                      {currentData.condition.text}
                     </Card.Text>
                   </Card.Body>
             </Card>
           </div>
+
+          <div className='co'>
            {/* Hava durumu verileri varsa aşağıdaki bileşeni render ediyoruz */}
           { weatherData &&
             (<div className='wetCards'>
@@ -45,7 +54,8 @@ function Container() {
                         <Card.Img className='img' variant="top" src={id.day.condition.icon}/>
                         <Card.Body className="cardBody">
                           <Card.Text className='cardtext'>
-                            {id.day.avgtemp_c}°C - {id.day.condition.text}
+                            {id.day.avgtemp_c}°C <br/>
+                            {id.day.condition.text}
                           </Card.Text>
                         </Card.Body>
                       </Card>
@@ -57,6 +67,9 @@ function Container() {
           }
           
         </div>
+              
+        </div>
+         
     )
   
   }
