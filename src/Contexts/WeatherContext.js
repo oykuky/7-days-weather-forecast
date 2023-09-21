@@ -6,7 +6,6 @@ const WeatherContext = createContext();
 // WetProvider adında bir bileşen (component) oluşturuyoruz. Bu bileşen, hava durumu verilerini yönetecek
 export const WetProvider = ({children}) => {
     const key = '799f2ec2bca14ba1b02174907232009';
-
     const [city ,setCity] = useState('Samsun')
     const [weatherData,setWeatherData] = useState(null);
     useEffect (() => {                      
