@@ -4,12 +4,13 @@ import { useWeather} from '../Contexts/WeatherContext';
 import CardGroup from 'react-bootstrap/CardGroup';
 
 
+
 function Container() {
 
   const {weatherData} = useWeather();
   // Eğer hava durumu verileri henüz yüklenmediyse, bir yükleme mesajı gösteriyoruz
   if(weatherData === null) {
-    return <div>
+    return <div className='loaded'>
       Veriler Yükleniyor...
     </div>
   }
@@ -20,7 +21,7 @@ function Container() {
 
   
   return (
-      <div className='big-co'>
+      <div className={'big-co' }>
             <div className='currentCard'>
                 <h3 className='header'>Current Weather</h3>
                 <p className='temp'> 

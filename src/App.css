@@ -7,6 +7,82 @@
   min-height: 100vh !important;
   background:linear-gradient(rgb(121, 246, 183), #c7f0f0, #2cc3ed);
 }
+/* Dark tema için sadece background rengini güncelleyin */
+.App.dark {
+  background: rgb(30, 30, 30);
+}
+.mode{
+  font-size: 27px !important;
+  font-weight: 700;
+  color: #490ded;
+  position: absolute;
+  top: 18px;
+  right: 106px;
+}
+/* toggle stilleri */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 91px;
+  height: 50px;
+  margin-left:21px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.round{
+  border-radius: 40px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 46px;
+  width: 46px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 40px;
+}
+
+/* Açık (on) durum için arka plan rengi */
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+/* Açık (on) durum için kaydırma işareti */
+input:checked + .slider:before {
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px);
+}
+/* ----------- */
+
+.loaded{
+  font-size: 25px;
+  color: #2d2c2c;
+  font-size: large;
+}
+.themeButton{
+  width: 250px;
+  height: 100px;
+  background-color: #d5dbdd;
+}
+
 
 .co{
   margin: 0 auto; /* İçeriği yatay olarak ortala */
