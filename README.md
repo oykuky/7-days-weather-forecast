@@ -11,4 +11,7 @@ In the project directory, you can run:
 
 ![2](https://github.com/oykuky/7-days-weather-forecast/blob/main/public/ssImg/2.png)
 
+### Dark Mode
+![3](https://github.com/oykuky/7-days-weather-forecast/blob/main/public/ssImg/3.png)
+
 
